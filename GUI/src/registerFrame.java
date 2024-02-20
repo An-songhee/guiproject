@@ -21,9 +21,6 @@ public class registerFrame {
 	private JPasswordField password;
 	private JTextField name;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -37,22 +34,16 @@ public class registerFrame {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+
 	public registerFrame() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+
 	private void initialize() {
 		frame = new JFrame();
 
-		// 패널에 이미지 설정
 		ImagePanel bgPanel = new ImagePanel(new ImageIcon("./image/bg_registerFrame.jpg").getImage());
-		// 이미지 크기를 가져와서 이미지 크기만큼 패널을 만들도록 설정
 		frame.setSize(bgPanel.getWidth(), bgPanel.getHeight());
 		frame.getContentPane().add(bgPanel);
 		bgPanel.setLayout(null);
