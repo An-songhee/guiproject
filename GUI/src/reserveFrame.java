@@ -51,8 +51,7 @@ public class reserveFrame extends javax.swing.JFrame {
         ImageIcon reserve2 = new ImageIcon("./image/reserve2.jpg");
         ImageIcon backBtn = new ImageIcon("./image/btn/back_btn2.png");
         icon = new ImageIcon("./image/bg_reserveFrame.jpg");
-        try { // mac에서 Color객체 채울때 필요
-            javax.swing.UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+        try {  javax.swing.UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception e) {
             e.printStackTrace();
         }
